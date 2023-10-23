@@ -5,7 +5,7 @@
     <!-- Project from https://start.vaadin.com/ -->
     <groupId>com.example.application</groupId>
     <artifactId>mytodo</artifactId>
-    <name>mytodo</name>
+    <name>reperfection-it</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -78,6 +78,20 @@
             <artifactId>vaadin-testbench-junit5</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.8.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
@@ -139,6 +153,15 @@
                                 <phase>compile</phase>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.google.cloud.tools</groupId>
+                        <artifactId>appengine-maven-plugin</artifactId>
+                        <version>2.4.3</version>
+                        <configuration>
+                            <projectId>proud-maker-385302</projectId>
+                            <version>20231002t153841</version>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>

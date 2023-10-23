@@ -1,0 +1,1 @@
+Hey, you're the new face I heard about. Here's a quick coding exercise to gauge your skill: public static void main(String[] args) { int num = 1; System.out.println(num); }
